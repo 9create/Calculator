@@ -1,0 +1,64 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #121212;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.calculator {
+  max-width: 350px;
+  width: 100%;
+}
+
+#display {
+  width: calc(100% - 25px); /* Thoda chhota kiya */
+  padding: 15px;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: none;
+  text-align: right;
+  background: white;
+  color: black;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  padding: 20px;
+  font-size: 1em;
+  border: none;
+  border-radius: 10px;
+  background: #2979ff;
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #5393ff;
+}
+
+#history {
+  margin-top: 20px;
+  font-size: 0.9em;
+  max-height: 120px;
+  overflow-y: auto;
+  background: #1e1e1e;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.8em;
+  color: #aaa;
+}
+  
